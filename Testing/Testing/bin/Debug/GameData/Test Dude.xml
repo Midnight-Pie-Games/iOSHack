@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <baseHealth>100</baseHealth>
+  <baseMana>100</baseMana>
+  <totalHealth>100</totalHealth>
+  <totalMana>100</totalMana>
+  <baseAttributes>
+    <Attribute>
+      <AttributeName>Strength</AttributeName>
+      <AttributeDescription>Overall physical strength, muscle and physical power</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Strength</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Dexterity</AttributeName>
+      <AttributeDescription>Hand-eye coordination, agility, reflexes, and balance</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Dexterity</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Constitution</AttributeName>
+      <AttributeDescription>Health and stamina</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Constitution</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Intelligence</AttributeName>
+      <AttributeDescription>Learning and reasoning</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Intelligence</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Wisdom</AttributeName>
+      <AttributeDescription>Willpower, common sense, perception, and intuition</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Wisdom</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Charisma</AttributeName>
+      <AttributeDescription>Force of personality, persuasiveness, personal magnetism, ability to lead, and physical attractiveness</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Charisma</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+  </baseAttributes>
+  <addedAttributes />
+  <totalAttributes>
+    <Attribute>
+      <AttributeName>Strength</AttributeName>
+      <AttributeDescription>Overall physical strength, muscle and physical power</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Strength</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Dexterity</AttributeName>
+      <AttributeDescription>Hand-eye coordination, agility, reflexes, and balance</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Dexterity</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Constitution</AttributeName>
+      <AttributeDescription>Health and stamina</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Constitution</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Intelligence</AttributeName>
+      <AttributeDescription>Learning and reasoning</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Intelligence</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Wisdom</AttributeName>
+      <AttributeDescription>Willpower, common sense, perception, and intuition</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Wisdom</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Charisma</AttributeName>
+      <AttributeDescription>Force of personality, persuasiveness, personal magnetism, ability to lead, and physical attractiveness</AttributeDescription>
+      <TypeOfAttribute>Stat</TypeOfAttribute>
+      <AttributeType>Charisma</AttributeType>
+      <AttributeLevel>10</AttributeLevel>
+    </Attribute>
+  </totalAttributes>
+  <equippedItems />
+  <inventory />
+  <temporaryEffects />
+  <races>
+    <Race>
+      <attributeChange />
+      <RaceType>Human</RaceType>
+    </Race>
+  </races>
+  <charClasses>
+    <CharClass>
+      <attributeChange />
+      <CharacterClass>None</CharacterClass>
+    </CharClass>
+  </charClasses>
+  <Sex>Male</Sex>
+  <Name>Test Dude</Name>
+</Character>

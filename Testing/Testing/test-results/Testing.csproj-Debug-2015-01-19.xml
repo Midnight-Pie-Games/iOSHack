@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tests>
+    <TestRecord Name="Testing">
+      <Tests>
+        <TestRecord Name="Character_XML">
+          <Tests>
+            <TestRecord Name="SaveAndLoadBasicChar">
+              <Results>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:41:16</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : AssemblyCSharp.Character cannot be serialized because it does not have a parameterless constructor.</Message>
+                  <StackTrace>   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 74</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:42:08</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : There was an error reflecting type 'AssemblyCSharp.Character'.
+  ----&gt; System.InvalidOperationException : Cannot serialize member 'AssemblyCSharp.Character.baseAttributes' of type 'System.Collections.Generic.List`1[[AssemblyCSharp.Attribute, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+  ----&gt; System.InvalidOperationException : AssemblyCSharp.Attribute cannot be serialized because it does not have a parameterless constructor.</Message>
+                  <StackTrace>   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 74
+--InvalidOperationException
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetFieldModel(FieldInfo fieldInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+--InvalidOperationException
+</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:45:12</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : Cannot deserialize type 'AssemblyCSharp.Character' because it contains property 'Name' which has no public setter.</Message>
+                  <StackTrace>   at System.Xml.Serialization.TypeScope.GetSettableMembers(StructMapping mapping, ArrayList list)
+   at System.Xml.Serialization.TypeScope.GetSettableMembers(StructMapping structMapping)
+   at System.Xml.Serialization.TypeScope.GetSettableMembers(StructMapping mapping, Dictionary`2 memberInfos)
+   at System.Xml.Serialization.XmlSerializationReaderILGen.WriteLiteralStructMethod(StructMapping structMapping)
+   at System.Xml.Serialization.XmlSerializationReaderILGen.GenerateMethod(TypeMapping mapping)
+   at System.Xml.Serialization.XmlSerializationILGen.GenerateReferencedMethods()
+   at System.Xml.Serialization.XmlSerializationReaderILGen.GenerateEnd(String[] methods, XmlMapping[] xmlMappings, Type[] types)
+   at System.Xml.Serialization.TempAssembly.GenerateRefEmitAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GenerateTempAssembly(XmlMapping xmlMapping, Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 74</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:47:17</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : There is an error in XML document (0, 0).
+  ----&gt; System.Xml.XmlException : Root element is missing.</Message>
+                  <StackTrace>   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 78
+--XmlException
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderCharacter.Read18_Character()</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:47:53</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : There is an error in XML document (0, 0).
+  ----&gt; System.Xml.XmlException : Root element is missing.</Message>
+                  <StackTrace>   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 78
+--XmlException
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderCharacter.Read18_Character()</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:48:51</TestDate>
+                  <Passed>1</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 1.31ms</Message>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:49:31</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : There is an error in XML document (0, 0).
+  ----&gt; System.Xml.XmlException : Root element is missing.</Message>
+                  <StackTrace>   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 78
+--XmlException
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderCharacter.Read18_Character()</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:52:21</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : There is an error in XML document (0, 0).
+  ----&gt; System.Xml.XmlException : Root element is missing.</Message>
+                  <StackTrace>   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 78
+--XmlException
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderCharacter.Read18_Character()</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:53:50</TestDate>
+                  <Passed>1</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 1.34ms</Message>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T21:55:34</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.InvalidOperationException : There is an error in XML document (0, 0).
+  ----&gt; System.Xml.XmlException : Root element is missing.</Message>
+                  <StackTrace>   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 81
+--XmlException
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderCharacter.Read18_Character()</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T22:02:15</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.IO.DirectoryNotFoundException : Could not find a part of the path 'C:\Google Drive\Shared Projects\iOSHack\Testing\Testing\bin\Debug\GameData\TestDude.xml'.</Message>
+                  <StackTrace>   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Testing.Character_XML.SaveAndLoadBasicChar() in c:\Google Drive\Shared Projects\iOSHack\Testing\Testing\Character XML.cs:line 76</StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-01-19T22:03:24</TestDate>
+                  <Passed>1</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 1.50ms</Message>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+              </Results>
+            </TestRecord>
+          </Tests>
+        </TestRecord>
+      </Tests>
+    </TestRecord>
+  </Tests>
+</TestRecord>

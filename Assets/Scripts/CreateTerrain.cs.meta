@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 0a448b03e5dc17a47a8d44818edb6ec3
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - grass: {instanceID: 0}
+  - player: {instanceID: 0}
+  - mob: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
